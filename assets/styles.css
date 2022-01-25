@@ -52,20 +52,6 @@ input:hover {
   color: #e2dedb;
 }
 
-#submit {
-  font-family: "Lato", sans-serif;
-  font-size: 0.875em;
-  color: #b3aca7;
-  outline: none;
-  cursor: pointer;
-  border: solid 1px #b3aca7;
-}
-
-#submit:hover {
-  color: #e2dedb;
-  background-color: #b3aca7;
-}
-
 .flex-container {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -90,7 +76,7 @@ input:hover {
   margin-top: 10%;
 }
 
-.flex-item:nth-child(1) {
+.flex-item-label {
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
@@ -102,39 +88,62 @@ input:hover {
   align-self: baseline;
 }
 
-.flex-item:nth-child(2) {
+.flex-item-jornadaSemanal {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
-  -webkit-flex: 0 0 60%;
-  -ms-flex: 0 0 60%;
-  flex: 0 0 60%;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.flex-item:nth-child(3) {
+.flex-item-salario {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+  -webkit-flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.flex-item#submit {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   -webkit-flex: 0 1 5%;
   -ms-flex: 0 1 5%;
   flex: 0 1 5%;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
+  /* -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; */
 }
 
-.flex-item:nth-child(4) {
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 2;
-  -webkit-flex: 2 1 100%;
-  -ms-flex: 2 1 100%;
-  flex: 2 1 100%;
+.flex-item#submit:hover {
+  color: #e2dedb;
+  background-color: #b3aca7;
+}
+
+.flex-item#h1 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  text-align: center;
 }
