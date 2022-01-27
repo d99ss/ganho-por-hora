@@ -36,7 +36,6 @@ function checkInputs() {
   } else if (salario === "" || jornadaSemanal === "") {
     alert("Campo vazio, insira um numero");
   } else {
-    salario.value = "";
     alert("Insira um numero maior que zero");
   }
 }
